@@ -1,13 +1,32 @@
-<form
-  id="contact-form"
-  action="https://formsubmit.co/azurethegamer@email.com"
-  method="POST"
->
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+  <!-- Replace with your Access Key -->
+  <input type="hidden" name="access_key" value="5424db87-98cd-43f9-a613-eb993f6c9efd">
+  
+  <!-- Form Inputs. Each input must have a name="" attribute -->
   <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required />
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required />
+  <br/>
+  <input type="text" name="name" required>
+  <br/>
+  <label for="name">Email:</label>
+  <br/>
+  <input type="email" name="email" required>
+  <br/>
+  <label for="name">Programming Language:</label>
+  <br/>
+  <input type="Programming Language" name="Programming Language" required>
+  <br/>
   <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-  <button type="submit">Send</button>
+  <br/>
+  <textarea name="message" required></textarea>
+
+  <!-- Honeypot Spam Protection -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+  <!-- Custom Confirmation / Success Page -->
+  <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+  <button type="submit">Submit Form</button>
+
 </form>
