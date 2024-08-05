@@ -1,0 +1,230 @@
+/*tbh di ko alam ano point netong asterisk na to hahahha*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+/*eto is kung saan nakapaloob yung mismong image and background para lang hiwalay dun sa kung nasan yung nav bar*/
+.content {
+    min-height: 100vh;
+    background: url("img/BG.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*dito naman naka paloob yung navbar */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/*this control the look of secondary navbar yung nasa baba */
+.subheader{
+    position:absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    background: #F6F4F1;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+/*from here to logo is solely for designing yung navbar at para may lumabas na parang underline pag naka hover yung cursor*/
+.navbar a, .header a, .subnavbar a{
+    position: relative;
+    font-size: 1.2vw;
+    color: black;
+    font-weight: 1000;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar a::before, .header a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: hsl(0, 0%, 0%);
+    transition: .3s;
+}
+
+.navbar a:hover::before, .header a:hover::before {
+    width: 100%;
+}
+
+/*yung logo problematic din kase di nag scascale so medyo wacky pag maliit yung window*/
+.logo {
+    max-width: 20%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+/*yung welcome at learn is for those two text before the button*/
+.welcome{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 1000;
+    padding-top: 300px;
+    text-align: center;
+    color: #81C1DB;
+}
+
+.learn{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 50px;
+    color: #92d0e9;
+}
+
+
+/*eto yung mentioned kong container sa index*/
+.button-cont {
+    margin: 0;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*yung style ng button*/
+.button {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 15px;   
+}
+
+/*python form style*/
+
+.bg{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100vh;
+    background: url("img/testbg.jpg") repeat;
+    background-size: 500px;
+    background-position: left;
+
+}
+
+/*left and right side of a form*/
+.form_left{
+    padding-left: 5%;
+    padding-top: 15%;
+    height:100%;
+    width: 50%;
+    float: left;
+    font-size: 1.5vw;
+}
+
+.form_right{
+    margin-left: 40%;
+    position: fixed ;
+    padding-left: 20%;
+    padding-top: 15%;
+    height: 100%;
+    width: 50%;
+}
+
+.form_right label{
+    font-size: 1.2vw;
+    color: black;
+    font-weight: 1000;
+    color: hsl(206, 28%, 11%);
+    margin-right: 23%;
+}
+
+/*style lang to ng button na submit hahahhaa*/
+.submit {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(59, 72%, 54%);
+    background-color: hsl(204, 98%, 32%);
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    
+}
+
+.contact-form input{
+    width: 40%;
+    padding: 2px 2px;
+    margin: 3px ;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.imgfit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+/*gradient bg para sa lahat ng tab -je*/
+.jebody{
+    background: linear-gradient(to right, #81c1db , #ffff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*title ng about at contact -je*/
+.title{
+    width: 500px;
+    height: 10px;
+    font-size: 30px;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*content ng about at contact -je*/
+.about_contact{ 
+    width: 500px;
+    height: 500px;
+    font-size: 22px;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wip{
+    font-size: 10.3vw;
+    color: black;
+    font-weight: 1000;
+    color: hsl(206, 28%, 11%);
+    padding-top: 20%;
+}
