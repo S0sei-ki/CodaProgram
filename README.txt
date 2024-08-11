@@ -12,3 +12,6 @@ combined both version of file
 
 contact, about and python pages added wip added for wip
 
+update 0.9 9/11/24
+
+created temp main menu, made the form fancier and added link for other language
