@@ -142,12 +142,16 @@
 }
 
 .form_right{
-    margin-left: 40%;
+    margin-top: 8%;
+    margin-left: 50%;
     position: fixed ;
-    padding-left: 20%;
-    padding-top: 15%;
-    height: 100%;
+    padding-left: 10%;
+    padding-top: 2%;
+    height: 80%;
     width: 50%;
+    background: rgb(255, 249, 238);
+    border-radius: 5%;
+    border: wheat 5px solid;
 }
 
 .form_right label{
@@ -166,18 +170,31 @@
     font-style: normal;
     color: hsl(59, 72%, 54%);
     background-color: hsl(204, 98%, 32%);
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 1.3vw;
+    border-radius: 10%;
     border: none;
     padding: 5px 10px;
     
 }
 
-.contact-form input{
+.textarea {
+    width: 82%;
+    height: 15vw;
+    padding: 1% 2%;
+    box-sizing: border-box;
+    border-radius: 2%;
+    background-color: #f8f8f8;
+    font-size:0.8vw;
+    resize: none;
+  }
+
+.input1{
     width: 40%;
     padding: 2px 2px;
     margin: 3px ;
 }
+
+
 
 .imgbox {
     display: grid;
@@ -227,4 +244,27 @@
     font-weight: 1000;
     color: hsl(206, 28%, 11%);
     padding-top: 20%;
+}
+
+.main_menu{
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 15%;
+    margin: 0% 15% 0% 15%;
+    flex-wrap: wrap;
+}
+.card{
+    border: 1px solid #ccc;
+    width: 23%;
+    background: hsl(0, 0%, 97%);
+    border-radius: 5%;
+    margin: 1%;
+}
+
+.card:hover{
+    border: 1px solid #777;
+}
+.card img {
+    width: 100%;
+    height: auto;
 }
