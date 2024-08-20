@@ -227,7 +227,19 @@
     margin-left: auto;
 }
 /*content ng about at contact -je*/
-.about_contact{ 
+.about{ 
+    width: 500px;
+    height: 500px;
+    font-size: 22px;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    color: hsl(197, 100%, 77%);
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact{ 
     width: 500px;
     height: 500px;
     font-size: 22px;
