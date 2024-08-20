@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
+    scrollbar-color: rgb(36, 92, 196) rgb(43, 43, 43);
 }
 
 /*eto is kung saan nakapaloob yung mismong image and background para lang hiwalay dun sa kung nasan yung nav bar*/
@@ -22,7 +23,7 @@
     left: 0;
     width: 100%;
     padding: 5px 100px;
-    background: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 12%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +36,7 @@
     left: 0;
     width: 100%;
     padding: 5px 100px;
-    background: #F6F4F1;
+    background: #333333;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -45,8 +46,8 @@
 /*from here to logo is solely for designing yung navbar at para may lumabas na parang underline pag naka hover yung cursor*/
 .navbar a, .header a, .subnavbar a{
     position: relative;
-    font-size: 1.2vw;
-    color: black;
+    font-size: 1.5vw;
+    color: rgb(51, 136, 170);
     font-weight: 1000;
     text-decoration: none;
     margin-left: 15px;
@@ -125,7 +126,7 @@
     position: absolute;
     min-width: 100%;
     min-height: 100vh;
-    background: url("img/testbg.jpg") repeat;
+    background: hsl(0, 0%, 28%);
     background-size: 500px;
     background-position: left;
 
@@ -139,6 +140,7 @@
     width: 50%;
     float: left;
     font-size: 1.5vw;
+    color: hsl(0, 0%, 91%);
 }
 
 .form_right{
@@ -149,16 +151,14 @@
     padding-top: 2%;
     height: 80%;
     width: 50%;
-    background: rgb(255, 249, 238);
-    border-radius: 5%;
-    border: wheat 5px solid;
+    background: rgb(80, 80, 80);
+    border: rgb(158, 158, 158) 3px solid;
 }
 
 .form_right label{
     font-size: 1.2vw;
-    color: black;
     font-weight: 1000;
-    color: hsl(206, 28%, 11%);
+    color: hwb(0 89% 11%);
     margin-right: 23%;
 }
 
@@ -168,8 +168,8 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: hsl(59, 72%, 54%);
-    background-color: hsl(204, 98%, 32%);
+    color: hwb(0 19% 81%);
+    background-color: hsl(204, 100%, 61%);
     font-size: 1.3vw;
     border-radius: 10%;
     border: none;
@@ -183,9 +183,10 @@
     padding: 1% 2%;
     box-sizing: border-box;
     border-radius: 2%;
-    background-color: #f8f8f8;
+    background-color: #a1a1a1;
     font-size:0.8vw;
     resize: none;
+    color: hwb(184 88% 0%);
   }
 
 .input1{
@@ -209,7 +210,7 @@
 
 /*gradient bg para sa lahat ng tab -je*/
 .jebody{
-    background: linear-gradient(to right, #81c1db , #ffff);
+    background: hsl(0, 0%, 28%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -220,7 +221,7 @@
     font-size: 30px;
     font-family: "DM Sans", sans-serif;
     text-align: center;
-
+    color: hsl(197, 100%, 77%);
     margin-top: 150px;
     margin-right: auto;
     margin-left: auto;
@@ -232,7 +233,7 @@
     font-size: 22px;
     font-family: "DM Sans", sans-serif;
     text-align: center;
-
+    color: hsl(197, 100%, 77%);
     margin-top: 70px;
     margin-right: auto;
     margin-left: auto;
@@ -246,25 +247,132 @@
     padding-top: 20%;
 }
 
-.main_menu{
+.strip{
     display: flex;
     box-sizing: border-box;
     padding-top: 15%;
-    margin: 0% 15% 0% 15%;
-    flex-wrap: wrap;
+    margin-left: 5%;
 }
+
+.atstrip{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 25%;
+    background: rgb(14, 72, 126);
+    --spacer: 2rem;
+    display: grid;
+    gap: var(--spacer);
+    padding: var(--spacer) var(--spacer) var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 32%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-color: rgb(36, 92, 196) rgb(43, 43, 43);
+    
+}
+
 .card{
+    position:absolute;
     border: 1px solid #ccc;
-    width: 23%;
-    background: hsl(0, 0%, 97%);
+    width: 25%;
+    background: hwb(184 88% 0%);
     border-radius: 5%;
-    margin: 1%;
 }
 
 .card:hover{
-    border: 1px solid #777;
+    border: 5px solid rgb(14, 72, 126);;
 }
 .card img {
     width: 100%;
     height: auto;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #343434;
+    padding-top: 50px;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #81C1DB;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    color: #81C1DB;
+}
+.social-icons i:hover{
+    color: #81C1DB;
+}
+.bottom-bar{
+    background: #81C1DB;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
 }
