@@ -126,8 +126,17 @@
     position: absolute;
     min-width: 100%;
     min-height: 100vh;
-    background: hsl(0, 0%, 28%);
-    background-size: 500px;
+    background: url("img/bgbg2.png");
+    background-size: 100%;
+    background-position: left;
+
+}
+.bggd{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100vh;
+    background: url("img/gdbg.png");
+    background-size: 100%;
     background-position: left;
 
 }
@@ -390,3 +399,39 @@ a:hover{
     font-size: 16px;
     padding: 7px;
 }
+
+.purpose{
+    width: 500px;
+    height: 10px;
+    font-size: 50px;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    color: rgb(51, 136, 170);
+    padding-top: 20%;
+    margin-right: auto;
+    margin-left: 10%;
+    font-weight: 1000;
+}
+.purpose1{
+    font-weight: 1000;
+    width: 500px;
+    height: 10px;
+    font-size: 50px;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    color: rgb(51, 136, 170);
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+/*
+.bginbg {
+    position:  relative;
+    min-width: 100%;
+    min-height: 100vh;
+    background: url("img/bgbg.png") no-repeat;
+    background-size: 100%;
+    background-position: left;
+    
+}
+*/
