@@ -127,7 +127,7 @@
     min-width: 100%;
     min-height: 100vh;
     background: url("img/bgbg2.png");
-    background-size: 100%;
+    background-size: 80%;
     background-position: left;
 
 }
@@ -136,7 +136,7 @@
     min-width: 100%;
     min-height: 100vh;
     background: url("img/gdbg.png");
-    background-size: 100%;
+    background-size: 80%;
     background-position: left;
 
 }
