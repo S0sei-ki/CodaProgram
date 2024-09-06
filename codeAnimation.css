@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --typewriterSpeed: 3s;
+}
+
+.acontainer { 
+    display: inline-block;
+    width: 800px;
+}
+
+.pythonc {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font:bold;
+    color: rgb(51, 136, 170);
+    position: relative;
+    font-family: monospace;
+    position: relative;
+    list-style: none;
+    margin-top: 30%;
+    margin-left: 25%;
+    width: max-content;
+}
+
+.pythonc::before,
+.pythonc::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.pythonc::before {
+    background: #000e1d;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(22) 1s forwards;
+}
+
+.pythonc::after {
+    width: 0.125em;
+    background: white;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(22) 1s forwards,
+        blink 750ms steps(24) infinite;
+}
+
+@keyframes typewriter {
+    to { 
+        left: 100%; 
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
